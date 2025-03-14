@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className=" py-4 px-6 flex gap-10 justify-between h-20 items-center">
       <a href="/">
-        <p>Autonomous Car</p>
+        <p>Smart Vaccum Cleaner</p>
       </a>
       <nav>
         <ul className="flex gap-5 ">
