@@ -1,11 +1,15 @@
 import { NavLink } from "react-router";
 import { cn } from "@/lib/utils";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Header() {
   return (
     <header className=" py-4 px-6 flex gap-10 justify-between h-20 items-center">
       <a href="/">
-        <p>Smart Vaccum Cleaner</p>
+        <Avatar>
+          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarFallback>SVC</AvatarFallback>
+        </Avatar>
       </a>
       <nav>
         <ul className="flex gap-5 ">
