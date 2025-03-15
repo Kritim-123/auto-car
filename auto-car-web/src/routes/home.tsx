@@ -1,11 +1,14 @@
+import DocumentGrid from "@/components/SmallComponents/document-grid";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
 
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
+
   return (
     <div>
-      <div>
+      {/* Start of Reference Paper*/}
+      <div className="reference-paper">
         <h2 className="text-2x1 font-bold my-4 mx-4">References Papers</h2>
         <Card
           className="w-[350px] mx-4 my-4 h-auto cursor-pointer"
@@ -28,6 +31,14 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
+
+      {/* End of Reference Paper*/}
+
+      <div>
+      <h2 className="text-2x1 font-bold my-4 mx-4">Documents</h2>
+      <DocumentGrid />
+      </div> 
+
     </div>
   );
 }
